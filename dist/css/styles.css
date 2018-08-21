@@ -38,7 +38,7 @@ body {
 /* Nav */
 
 nav {
-  background: var(--secondary-color);
+  background: #bf373e;
   color: var(--primary-color);
 }
 
