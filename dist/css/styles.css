@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+/* Varaibles */
+:root {
+  --primary-color: #252529;
+  --secondary-color: #bbcad2;
+  --background-color: rgba(37, 37, 41, 0.8);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px;
+  overflow-y: scroll;
+}
+
+.content {
+  padding: 5vw;
+  min-height: 100vh;
+}
+
+.content .title .sub-title {
+  margin-left: 2vw;
+  font-size: 2.5rem;
+}
+
+/* Nav */
+
+nav {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+nav .nav-wrapper {
+  margin: 0 5vw;
+  color: var(--primary-color);
+}
+
+nav .nav-wrapper a {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+/* Landing Area */
+
+.landing-zone {
+  /* background: var(--primary-color); */
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: var(--secondary-color);
+}
+.name {
+  margin-top: 40vh;
+}
+
+.name h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  margin-bottom: 0;
+}
+.title.name {
+  background-color: rgba(37, 37, 41, 0.8);
+  width: 550px;
+  padding: 20px 20px;
+}
+.title.name .sub-title {
+  font-size: 2.8rem;
+  margin-top: 0.5vh;
+  color: var(--third-color);
+}
+
+/* About Me */
+.about-me {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.about-me .content .row img {
+  padding: 0;
+}
+
+.row img {
+  border-radius: 50%;
+  padding: 0;
+}
+
+.about-me .row .card {
+  padding: 1vw;
+}
+
+.bio {
+  margin: 2vw;
+  font-size: 1.5rem;
+}
+
+/* Portfolio */
+.portfolio {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+div.social-media-links a {
+  display: inline-block;
+  margin: auto 0;
+  padding: 2px;
+}
+
+/* All Project Styling */
+.card .card-image span.card-title {
+  background-color: var(--background-color);
+  padding: 2px;
+  width: auto;
+  padding-right: 2vw;
+  margin-bottom: 15px;
+}
+
+/* Project01 */
+.project01 .card-image a {
+  background-size: cover;
+}
+.project01 .card-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Project02 */
+
+.project02 .card-image img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project02 .card-image span {
+  background-size: cover;
+}
+
+/* Contact */
+.contact {
+  background: url("../img/lemur01.jpg");
+  background-size: cover;
+  color: var(--primary-color);
+}
+
+.title.name {
+  background-color: rgba(37, 37, 41, 0.8);
+  width: 550px;
+  padding: 20px 20px;
+}
+
+div.contact div.contactInfo {
+  background-color: rgba(37, 37, 41, 0.8);
+  width: 30vw;
+  min-width: 300px;
+  padding: 20px;
+  height: 24vh;
+  min-height: 250px;
+  color: var(--secondary-color);
+}
+
+.contact {
+  height: 100vh;
+}
