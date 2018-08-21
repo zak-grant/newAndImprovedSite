@@ -3,9 +3,11 @@
 /* Varaibles */
 :root {
   --primary-color: #252529;
-  --secondary-color: #bbcad2;
+  /* --secondary-color: #bbcad2; */
+  --secondary-color: #c3eefb;
   --background-color: rgba(37, 37, 41, 0.8);
-  --secondary-background-color: rgba(187, 202, 210, 0.8);
+  /* --secondary-background-color: rgba(187, 202, 210, 0.8); */
+  --secondary-background-color: rgba(195, 238, 251, 0.8npm);
 }
 
 html {
@@ -187,7 +189,7 @@ div.contact div.contactInfo {
 }
 
 .contact {
-  height: 100vh;
+  height: 130vh;
 }
 
 .contact .title {
@@ -215,14 +217,42 @@ div.contact div.contactInfo {
 /* Footer */
 footer .row {
   margin: 0;
+  background: var(--primary-color);
 }
 .footer-section {
-  height: 20vh;
-  width: auto;
-  background: var(--primary-color);
-  margin: 0;
+  border-top: 3px solid var(--primary-color);
+  /* height: 300px; */
+  margin-bottom: 0;
   padding: 0;
 }
+
+.footerBox {
+  height: 200px;
+}
+
+.contactInfoFooter {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.contactInfoFooter ul li a {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+footer .footerBox .contactInfoFooter p {
+  font-size: 1.6rem;
+}
+
+footer .footerBox .contactInfoFooter i {
+  size: 20px;
+}
+
+.footerBox .contactInfoFooter h5 {
+  size: 2rem;
+}
+
 /* Media Queries */
 
 @media (max-width: 900px) {
