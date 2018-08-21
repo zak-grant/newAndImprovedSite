@@ -10,30 +10,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Zak Grant / Web Developer</title>
 </head>
 
 <body>
-
-    <!-- Nav Bar -->
     <div class="navbar-fixed">
-        <nav class="z-depth-4">
+        <nav>
             <div class="nav-wrapper">
-                <a href="" class="brand-logo">Zak Grant</a>
-                <ul id="nav-mobile " class="right hide-on-med-and-down ">
-                    <li><a href="sass.html ">About Me</a></li>
-                    <li><a href="badges.html ">Portfolio</a></li>
-                    <li><a href="collapsible.html ">Contact</a></li>
+                <a href="#me" class="brand-logo">Zak Grant</a>
+                <a href="#" data-target="dropdown-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
+    <ul class="sidenav" id="dropdown-menu">
+        <li><a href="#me" class="brand-logo">Zak Grant</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
+
     <!-- Landing Area -->
-    <div class="container-fluid landing-zone ">
+    <div id="me" class="container-fluid landing-zone ">
         <div class="content ">
             <div class="row ">
-                <div class="col-sm-12 title name ">
+                <div class="col s12 m12 l6 xl4 title name">
                     <h1>Zak Grant</h1>
                     <p class="sub-title ">Web Developer / Programmer</p>
                 </div>
@@ -42,11 +51,11 @@
     </div>
 
     <!-- About Me -->
-    <div class="container-fluid about-me ">
+    <div id="about" class="container-fluid about-me ">
         <div class="content ">
 
             <div class="row ">
-                <div class="col s12 m6 l4 xl6 title ">
+                <div class="col s12 m12 l4 xl6 title ">
                     <h1>Who Am I?</h1>
                     <div class="divider z-depth-3"></div>
                     <p class="sub-title ">Web Developer / Programmer</p>
@@ -81,7 +90,7 @@
     </div>
 
     <!-- Portfolio -->
-    <div class="container-fluid portfolio ">
+    <div id="portfolio" class="container-fluid portfolio ">
         <div class="content ">
 
             <div class="row ">
@@ -93,22 +102,28 @@
             </div>
 
             <div class="row ">
-                <div class="col s12 m6 l4 xl3 ">
+
+                <div class="col s12 m10 offset-m1 l6 xl3 ">
                     <div class="card project01">
                         <div class="card-image ">
                             <img src="./img/project01.JPG ">
-                            <span class="card-title ">Client Panel</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light black pulse"><i class="fab fa-angular"></i></a>
+                            <span class="card-title z-depth-4">Client Panel</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="fab fa-angular"></i></a>
                         </div>
+                        <div class="divider"></div>
                         <div class="card-content ">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                                because I require little markup to use effectively.</p>
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Angular</li>
+                                <li>Bootstrap</li>
+                                <li>Firebase</li>
+                            </ul>
                             <div class="social-media-links">
                                 <div class="social-media-links">
-                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" class="waves-effect waves-light btn-small"><i
+                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" target="_blank" class="waves-effect waves-light btn-small"><i
                                             class="fas fa-eye"> View</i></a>
 
-                                    <a href="https://github.com/zak-grant/ClientPanel" class="waves-effect waves-light btn-small">
+                                    <a href="https://github.com/zak-grant/ClientPanel" target="_blank" class="waves-effect waves-light btn-small">
                                         <i class="fab fa-github"> Github</i>
                                     </a>
                                 </div>
@@ -117,23 +132,28 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 xl3 ">
+                <div class="col s12 m10 offset-m1 l6 xl3 ">
                     <div class="card project02">
                         <div class="card-image ">
                             <img src="./img/project02.JPG ">
-                            <span class="card-title ">Client Panel</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light black pulse"><i class="fab fa-node-js"></i></a>
+                            <span class="card-title z-depth-4">Stories</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light green pulse"><i class="fab fa-node"></i></a>
                         </div>
+                        <div class="divider"></div>
                         <div class="card-content ">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                                because I require little markup to use effectively.</p>
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Node / Express.js</li>
+                                <li>Google OAUTH</li>
+                                <li>Mongo</li>
+                            </ul>
                             <div class="social-media-links">
                                 <div class="social-media-links">
-                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" class="waves-effect waves-light btn-small"><i
+                                    <a href="https://sheltered-taiga-99592.herokuapp.com/dashboard" target="_blank" class="waves-effect waves-light btn-small"><i
                                             class="fas fa-eye"> View</i></a>
 
-                                    <a href="https://github.com/zak-grant/ClientPanel" class="waves-effect waves-light btn-small">
-                                        <i class="fab fa-github"> Github</i>
+                                    <a href="https://github.com/zak-grant/storybooks" target="_blank" class=" waves-effect waves-light btn-small ">
+                                        <i class="fab fa-github "> Github</i>
                                     </a>
                                 </div>
                             </div>
@@ -141,23 +161,26 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 xl3 ">
-                    <div class="card project03">
+                <div class="col s12 m10 offset-m1 l8 offset-l2 xl3 ">
+                    <div class="card project03 ">
                         <div class="card-image ">
-                            <img src="./img/project01.JPG ">
-                            <span class="card-title ">Client Panel</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light black pulse"></a>
+                            <img src="./img/project03.JPG ">
+                            <span class="card-title z-depth-4 ">VidJot</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light green pulse "><i class="fab fa-node "></i></a>
                         </div>
+                        <div class="divider"></div>
                         <div class="card-content ">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                                because I require little markup to use effectively.</p>
-                            <div class="social-media-links">
-                                <div class="social-media-links">
-                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" class="waves-effect waves-light btn-small"><i
-                                            class="fas fa-eye"> View</i></a>
-
-                                    <a href="https://github.com/zak-grant/ClientPanel" class="waves-effect waves-light btn-small">
-                                        <i class="fab fa-github"> Github</i>
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Node / Express.js</li>
+                                <li>Google OAUTH</li>
+                                <li>Mongo</li>
+                            </ul>
+                            <div class="social-media-links ">
+                                <div class="social-media-links ">
+                                    <a href="https://github.com/zak-grant/vidjot01" target="_blank" class="waves-effect waves-light
+                                        btn-small ">
+                                        <i class="fab fa-github "> Github</i>
                                     </a>
                                 </div>
                             </div>
@@ -165,24 +188,26 @@
                     </div>
                 </div>
 
-
-                <div class="col s12 m6 l4 xl3 ">
-                    <div class="card project03">
+                <div class="col s12 m10 offset-m1 l4 xl3 ">
+                    <div class="card project07 ">
                         <div class="card-image ">
-                            <img src="./img/project01.JPG ">
-                            <span class="card-title ">Client Panel</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light black pulse"></a>
+                            <img src="./img/project07.JPG ">
+                            <span class="card-title z-depth-4 ">Development Log</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red pulse "><i class="fab fa-angular "></i></a>
                         </div>
+                        <div class="divider"></div>
                         <div class="card-content ">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                                because I require little markup to use effectively.</p>
-                            <div class="social-media-links">
-                                <div class="social-media-links">
-                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" class="waves-effect waves-light btn-small"><i
-                                            class="fas fa-eye"> View</i></a>
-
-                                    <a href="https://github.com/zak-grant/ClientPanel" class="waves-effect waves-light btn-small">
-                                        <i class="fab fa-github"> Github</i>
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Angular</li>
+                                <li>BootStrap</li>
+                                <li>Local Storage</li>
+                            </ul>
+                            <div class="social-media-links ">
+                                <div class="social-media-links ">
+                                    <a href="https://github.com/zak-grant/devlogger" target="_blank" class="waves-effect waves-light
+                                        btn-small ">
+                                        <i class="fab fa-github "> Github</i>
                                     </a>
                                 </div>
                             </div>
@@ -190,25 +215,53 @@
                     </div>
                 </div>
 
-                <div class="col s12 m6 l4 xl3 ">
-                    <div class="card ">
-                        <div class="card-image project04">
-                            <img src="https://materializecss.com/images/sample-1.jpg ">
-                            <span class="card-title ">Card Title</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red pulse "><i class="material-icons">add</i></a>
+                <div class="col s12 m10 offset-m1 l4 xl3 ">
+                    <div class="card project05 ">
+                        <div class="card-image ">
+                            <img src="./img/project05.JPG ">
+                            <span class="card-title z-depth-4 ">Weather CMD</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light green pulse "><i class="fab fa-node "></i></a>
                         </div>
+                        <div class="divider"></div>
                         <div class="card-content ">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient
-                                because I require little markup to use effectively.</p>
-                            <div class="social-media-links">
-                                <div class="social-media-links">
-                                    <a href="https://clientpanelproduction-5b1bc.firebaseapp.com/" class="waves-effect waves-light btn-small"><i
-                                            class="fas fa-eye"> View</i></a>
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Node / Express.js</li>
+                                <li>Google Maps API / DarkSky API</li>
+                                <li>Yargs</li>
+                            </ul>
+                            <div class="social-media-links ">
+                                <div class="social-media-links ">
+                                    <a href="https://github.com/zak-grant/getweather" target="_blank" class="waves-effect
+                                        waves-light btn-small "><i class="fab fa-github ">
+                                            GitHub</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <a href="https://github.com/zak-grant/ClientPanel" class="waves-effect waves-light btn-small">
-                                        <i class="fab fa-github"> Github</i>
+                <div class="col s12 m10 offset-m1 l4 xl3 ">
+                    <div class="card project06 ">
+                        <div class="card-image ">
+                            <img src="./img/project06.JPG ">
+                            <span class="card-title z-depth-4 ">BookMarker</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red pulse "><i class="fab fa-js "></i></a>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="card-content ">
+                            <p>Technologies Used</p>
+                            <ul>
+                                <li>Vanilla JavaScript</li>
+                                <li>HTML / CSS</li>
+                                <li>Local Storage</li>
+                            </ul>
+                            <div class="social-media-links ">
+                                <div class="social-media-links ">
+                                    <a href="https://codepen.io/terrazakdel/full/bjQdpp/" class="waves-effect waves-light btn-small "><i
+                                            class="fab fa-codepen"> View</i>
                                     </a>
-                                </div></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -216,34 +269,52 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- Contact -->
-    <div class="container-fluid contact ">
-        <div class="content">
-            <div class="row">
-                <div class="col s12 title ">
-                    <h1>Get In Touch</h1>
-                    <p class="sub-title">Lets work together</p>
-                </div>
+    <div id="contact" class="container-fluid contact ">
+        <div class="col s12 title ">
+            <h1 class="">Get In Touch</h1>
+            <div class="divider"></div>
+            <p class="sub-title hide-on-small-and-down ">Lets work together</p>
+        </div>
+        <div class="content ">
+            <div class="row ">
+
             </div>
-            <div class="content contactInfo">
-                <div class="row">
-                    <p class="col s12 m12 l12 xl12 flow-text text-center">
+            <div class="content contactInfo ">
+                <div class="row ">
+                    <p class="col s12 m12 l12 xl12 flow-text text-center ">
                         Email: Zak.D.Grant@gmail.com
                     </p>
                 </div>
-                <div class="row">
-                    <p class="col s12 m12 l12 xl12 flow-text text-center">
+                <div class="row ">
+                    <p class="col s12 m12 l12 xl12 flow-text text-center ">
                         Phone: (616) 426-9906
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 m12 l12 xl12 footer-section">
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="../node_modules/jquery/dist/jquery.min.js "></script>
     <script type="text/javascript " src="../node_modules/materialize-css/dist/js/materialize.min.js "></script>
+    <script src="./js/index.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll(".sidenav");
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+
+    </script>
 </body>
 
 </html>

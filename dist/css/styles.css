@@ -5,6 +5,7 @@
   --primary-color: #252529;
   --secondary-color: #bbcad2;
   --background-color: rgba(37, 37, 41, 0.8);
+  --secondary-background-color: rgba(187, 202, 210, 0.8);
 }
 
 html {
@@ -54,8 +55,7 @@ nav .nav-wrapper a {
 /* Landing Area */
 
 .landing-zone {
-  /* background: var(--primary-color); */
-  background: url("../img/background.jpg");
+  background: url("../img/background00.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -67,18 +67,31 @@ nav .nav-wrapper a {
 
 .name h1 {
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 5.7rem;
   margin-bottom: 0;
 }
 .title.name {
   background-color: rgba(37, 37, 41, 0.8);
-  width: 550px;
-  padding: 20px 20px;
+  padding: 20px 15px;
 }
 .title.name .sub-title {
   font-size: 2.8rem;
   margin-top: 0.5vh;
   color: var(--third-color);
+}
+
+.title.name-small-display {
+  margin-top: 60vh;
+  display: inline-block;
+  background: var(--background-color);
+}
+
+.title.name-small-display h1 {
+  display: inline-block;
+}
+.title.name-small-display p {
+  margin-left: 5vw;
+  display: inline-block;
 }
 
 /* About Me */
@@ -126,24 +139,28 @@ div.social-media-links a {
   margin-bottom: 15px;
 }
 
-/* Project01 */
-.project01 .card-image a {
-  background-size: cover;
-}
-.project01 .card-image {
-  background-repeat: no-repeat;
-  background-size: cover;
+.col .card .card-content {
+  margin-bottom: 5vh;
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 
-/* Project02 */
-
-.project02 .card-image img {
-  background-repeat: no-repeat;
-  background-size: cover;
+.col .card .card-content p {
+  margin-bottom: 0;
 }
 
-.project02 .card-image span {
-  background-size: cover;
+.col .card .card-content ul {
+  margin-top: 0;
+  margin-bottom: 1vw;
+}
+
+.col .card .card-content ul li {
+  margin-left: 2vw;
+  margin-top: 0;
+}
+
+.col .card .divider {
+  color: #000;
 }
 
 /* Contact */
@@ -171,4 +188,116 @@ div.contact div.contactInfo {
 
 .contact {
   height: 100vh;
+}
+
+.contact .title {
+  font-size: 1.8rem;
+  background: var(--secondary-color);
+  margin: 0;
+  padding-top: 1vw;
+  padding-left: 5vw;
+}
+
+.contact .title p {
+  margin-left: 5vw;
+}
+
+.contact .title h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.8rem 0 1.68rem 0;
+}
+
+.contact .title .divider {
+  background-color: var(--primary-color);
+}
+
+/* Footer */
+footer .row {
+  margin: 0;
+}
+.footer-section {
+  height: 20vh;
+  width: auto;
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .contact {
+    background: url("../img/lemur01-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact .content .title p {
+    color: var(--primary-color);
+  }
+
+  .contact .content .title h1 {
+    color: var(--primary-color);
+    /* background: var(--secondary-color); */
+  }
+
+  .contact .content .title {
+    background-color: var(--secondary-background-color);
+  }
+
+  .landing-zone {
+    background: url("../img/background00-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-right: 20vw; */
+  }
+
+  #me .content {
+    min-height: none;
+    max-height: 30vh;
+    padding: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    background: var(--secondary-color);
+  }
+
+  #contact .content .row .col .s12 {
+    background: var(--background-color);
+  }
+
+  .contact .content .title p {
+    color: var(--primary-color);
+  }
+
+  .contact .content .title h1 {
+    background: var(--secondary-color);
+  }
+
+  .contact .content .content-title {
+    /* background: var(--secondary-color); */
+  }
+  div.content div.contactInfo {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 3rem;
+  }
+
+  div.content div.contactInfo .row p {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 1vh;
+  }
+
+  .landing-zone {
+    background: var(--primary-color);
+  }
+
+  div.contact div.contactInfo {
+    width: auto;
+  }
 }
