@@ -210,6 +210,10 @@ div.contact div.contactInfo {
   margin: 2.8rem 0 1.68rem 0;
 }
 
+.contactInfoText {
+  font-size: 1.8rem;
+}
+
 .contact .title .divider {
   background-color: var(--primary-color);
 }
@@ -221,13 +225,8 @@ footer .row {
 }
 .footer-section {
   border-top: 3px solid var(--primary-color);
-  /* height: 300px; */
   margin-bottom: 0;
   padding: 0;
-}
-
-.footerBox {
-  height: 200px;
 }
 
 .contactInfoFooter {
@@ -237,16 +236,12 @@ footer .row {
 
 .contactInfoFooter ul li a {
   margin-bottom: 8px;
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 footer .footerBox .contactInfoFooter p {
   font-size: 1.6rem;
-}
-
-footer .footerBox .contactInfoFooter i {
-  size: 20px;
 }
 
 .footerBox .contactInfoFooter h5 {
@@ -268,7 +263,6 @@ footer .footerBox .contactInfoFooter i {
 
   .contact .content .title h1 {
     color: var(--primary-color);
-    /* background: var(--secondary-color); */
   }
 
   .contact .content .title {
@@ -279,7 +273,6 @@ footer .footerBox .contactInfoFooter i {
     background: url("../img/background00-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-right: 20vw; */
   }
 
   #me .content {
@@ -306,9 +299,6 @@ footer .footerBox .contactInfoFooter i {
     background: var(--secondary-color);
   }
 
-  .contact .content .content-title {
-    /* background: var(--secondary-color); */
-  }
   div.content div.contactInfo {
     background: var(--secondary-color);
     color: var(--primary-color);
@@ -329,5 +319,14 @@ footer .footerBox .contactInfoFooter i {
 
   div.contact div.contactInfo {
     width: auto;
+  }
+
+  .contact {
+    height: 100vh;
+  }
+
+  div.content div.contactInfo .row p {
+    margin-top: 0;
+    margin-left: -20px;
   }
 }
