@@ -1,10 +1,15 @@
 // Or with jQuery
 
 $(document).ready(function() {
-  $(".sidenav").sidenav();
+  $('.sidenav').sidenav();
 });
 
-// $(document).addEventListener("DOMContentLoaded", function() {
-//   var elems = document.querySelectorAll(".sidenav");
-//   var instances = M.Sidenav.init(elems, options);
-// });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});

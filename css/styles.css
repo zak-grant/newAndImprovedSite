@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 /* Varaibles */
 :root {
@@ -15,16 +15,21 @@ html {
   width: 100%;
   overflow: hidden;
   position: relative;
+  background: var(--primary-color);
 }
 
 body {
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: -17px;
   overflow-y: scroll;
+}
+
+.sidenav {
+  background: #bf373e;
 }
 
 .content {
@@ -54,10 +59,14 @@ nav .nav-wrapper a {
   font-size: 1.6rem;
 }
 
+.sidenav li > a {
+  font-size: 1.4rem;
+}
+
 /* Landing Area */
 
 .landing-zone {
-  background: url("../img/background00.jpg");
+  background: url('../img/background00.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -133,6 +142,7 @@ div.social-media-links a {
 }
 
 /* All Project Styling */
+
 .card .card-image span.card-title {
   background-color: var(--background-color);
   padding: 2px;
@@ -165,9 +175,14 @@ div.social-media-links a {
   color: #000;
 }
 
+.col .card .btn-floating::after {
+  padding: 8px;
+  content: '.NET';
+}
+
 /* Contact */
 .contact {
-  background: url("../img/lemur01.jpg");
+  background: url('../img/lemur01.jpg');
   background-size: cover;
   color: var(--primary-color);
 }
@@ -252,9 +267,10 @@ footer .footerBox .contactInfoFooter p {
 
 @media (max-width: 900px) {
   .contact {
-    background: url("../img/lemur01-small.jpg");
+    background: url('../img/lemur01-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
   }
 
   .contact .content .title p {
@@ -270,7 +286,7 @@ footer .footerBox .contactInfoFooter p {
   }
 
   .landing-zone {
-    background: url("../img/background00-small.jpg");
+    background: url('../img/background00-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -314,7 +330,8 @@ footer .footerBox .contactInfoFooter p {
   }
 
   .landing-zone {
-    background: var(--primary-color);
+    background: url('../img/background01.jpg');
+    background-size: cover;
   }
 
   div.contact div.contactInfo {
@@ -322,11 +339,16 @@ footer .footerBox .contactInfoFooter p {
   }
 
   .contact {
-    height: 100vh;
+    height: 50vh;
   }
 
   div.content div.contactInfo .row p {
     margin-top: 0;
     margin-left: -20px;
+  }
+
+  .sidenav {
+    width: 62vw;
+    background: #bf373e;
   }
 }
